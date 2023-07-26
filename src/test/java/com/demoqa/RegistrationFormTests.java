@@ -53,8 +53,7 @@ public class RegistrationFormTests {
         $("#hobbiesWrapper").$(byText("Music")).click();
 
         //Setup picture
-        File imageFile = new File("src/resources/images/screen.jpg");
-        $("#uploadPicture").uploadFile(imageFile);
+        $("#uploadPicture").uploadFromClasspath("screen.jpg");
         //Setup current address
         $("#currentAddress").setValue("str. Jenkins 15, 7, 98-452");
         //Setup State
